@@ -8,8 +8,8 @@ function create () {
         var div = document.createElement("div");
         div.style.border = "solid";
         div.style.borderColor = "red";
-        div.style.height = "50px";
-        div.style.width = "50px";
+        div.style.height = "30px";
+        div.style.width = "30px";
         container.appendChild(div)
     }
 }
