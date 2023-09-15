@@ -1,7 +1,7 @@
 const container = document.getElementById("div-container")
 
 function create () {
-    var form = document.getElementById(boxForm);
+    var form = document.getElementById("boxForm");
     noBoxes = form.elements['noBox'].value;
 
     for (var i = 0; i < noBoxes; i++) {
