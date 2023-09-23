@@ -5,3 +5,8 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+#slider {
+    width: 200px;
+    height: 40px;
+}
