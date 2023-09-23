@@ -8,7 +8,7 @@ boxSizeRange.addEventListener("input", updateBoxSizeLabel);
 
 function updateBoxSizeLabel() {
     const selectedSize = boxSizeRange.value;
-    boxSizeLabel.textContent = `Grid Size: $(selectedSize)x$(selectedSize)`
+    boxSizeLabel.textContent = `Grid Size: ${selectedSize}x${selectedSize}`
 }
 
 
