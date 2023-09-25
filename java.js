@@ -13,10 +13,7 @@ function updateBoxSizeLabel() {
 
 
 function create () {
-    var form = document.getElementById("boxForm");
-    noBoxes = form.elements['noBox'].value;
-
-    //retreive the selected size from boxSizeRange from within this function
+   //retreive the selected size from boxSizeRange from within this function
     const selectedSize = boxSizeRange.value;
 
     //calculate the size of boxes 
