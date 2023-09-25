@@ -27,8 +27,8 @@ function create () {
     for (var i = 0; i < (selectedSize * selectedSize); i++) {
         var div = document.createElement("div");
         div.style.border = " 0.5px solid grey";
-        div.style.height = `${gridSize}`; //based on selectedSize
-        div.style.width = `${gridSize}`; //based on selectedSize
+        div.style.height = `${gridSize}px`; //based on selectedSize
+        div.style.width = `${gridSize}px`; //based on selectedSize
         div.style.boxSizing = "border-box";
 
         container.appendChild(div)
