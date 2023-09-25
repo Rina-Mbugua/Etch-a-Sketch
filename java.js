@@ -19,11 +19,12 @@ function create () {
     //calculate the size of boxes 
     const gridSize = Math.floor(480/selectedSize);
     console.log(gridSize);
+    console.log(selectedSize*selectedSize)
 
     //clear the existing boxes within the container
     container.innerHTML = "";
 
-    for (var i = 0; i < selectedSize * selectedSize; i++) {
+    for (var i = 0; i < (selectedSize * selectedSize); i++) {
         var div = document.createElement("div");
         div.style.border = " 0.5px solid grey";
         div.style.height = `${gridSize}`; //based on selectedSize
