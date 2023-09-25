@@ -18,6 +18,7 @@ function create () {
 
     //calculate the size of boxes 
     const gridSize = Math.floor(480/selectedSize);
+    console.log(gridSize);
 
     //clear the existing boxes within the container
     container.innerHTML = "";
