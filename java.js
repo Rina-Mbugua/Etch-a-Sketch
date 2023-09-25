@@ -22,6 +22,9 @@ function create () {
     //calculate the size of boxes 
     const gridSize = Math.floor(480/selectedSize);
 
+    //clear the existing boxes within the container
+    container.innerHTML = "";
+
     for (var i = 0; i < noBoxes; i++) {
         var div = document.createElement("div");
         div.style.border = " 0.5px solid grey";
