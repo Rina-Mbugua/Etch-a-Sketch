@@ -17,9 +17,9 @@ function create () {
     const selectedSize = boxSizeRange.value;
 
     //calculate the size of boxes 
-    const gridSize = Math.floor(480/selectedSize);
+    const gridSize = parseFloat((480/selectedSize).toFixed(2));
     console.log(gridSize);
-    console.log(selectedSize*selectedSize)
+    console.log(selectedSize*selectedSize);
 
     //clear the existing boxes within the container
     container.innerHTML = "";
@@ -27,8 +27,8 @@ function create () {
     for (var i = 0; i < (selectedSize * selectedSize); i++) {
         var div = document.createElement("div");
         div.style.border = " 0.5px solid grey";
-        div.style.height = `${gridSize}px`; //based on selectedSize
-        div.style.width = `${gridSize}px`; //based on selectedSize
+        div.style.height = `${gridSize}px`;
+        div.style.width = `${gridSize}px`; 
         div.style.boxSizing = "border-box";
 
         container.appendChild(div)
