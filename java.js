@@ -12,7 +12,7 @@ function updateBoxSizeLabel() {
 }
 
 function divHover(event) {
-    event.target.style.backgroundColor = "red";
+    event.target.style.backgroundColor = "rgb(96,96,96)";
 }
 
 
