@@ -11,6 +11,10 @@ function updateBoxSizeLabel() {
     boxSizeLabel.textContent = `Grid Size: ${selectedSize}x${selectedSize}`
 }
 
+function divHover(event) {
+    event.target.style.backgroundColor = "red";
+}
+
 
 function create () {
    //retreive the selected size from boxSizeRange from within this function
@@ -30,6 +34,8 @@ function create () {
         div.style.height = `${gridSize}px`;
         div.style.width = `${gridSize}px`; 
         div.style.boxSizing = "border-box";
+
+        div.addEventListener("mouseenter", divHover);
 
         container.appendChild(div)
     }
