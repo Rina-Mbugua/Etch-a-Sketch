@@ -21,7 +21,7 @@ function divHover(event) {
         event.target.style.backgroundColor = generateRandomColor();
     } else {
         event.target.style.backgroundColor = "rgb(96,96,96)";
-}
+    }
 }
 
 function create () {
@@ -45,6 +45,13 @@ function create () {
 
         div.addEventListener("mouseenter", divHover);
 
-        container.appendChild(div)
+        container.appendChild(div);
     }
 }
+
+rainbowButton.addEventListener("click", toggleRainbowEffect);
+
+function toggleRainbowEffect () {
+    rainbowEffectEnabled = rainbowEffectEnabled === "true" ? "false" : "true";
+}
+
