@@ -1,6 +1,11 @@
 const container = document.getElementById("div-container");
 const boxSizeRange = document.getElementById("boxSizeRange");
 const boxSizeLabel = document.getElementById("boxSizeLabel"); 
+const rainbowButton = document.getElementById("changeToRainbow")
+
+function generateRandomColor () {
+    return "#" + Math.floor(Math.random() * 16777215).toString(16)
+}
 
 //put and event listener to the boxSizeRange
 
@@ -12,9 +17,12 @@ function updateBoxSizeLabel() {
 }
 
 function divHover(event) {
-    event.target.style.backgroundColor = "rgb(96,96,96)";
+    if (rainbowEffectEnabled === "true") {
+        event.target.style.backgroundColor = generateRandomColor();
+    } else {
+        event.target.style.backgroundColor = "rgb(96,96,96)";
 }
-
+}
 
 function create () {
    //retreive the selected size from boxSizeRange from within this function
