@@ -55,3 +55,4 @@ function toggleRainbowEffect () {
     rainbowEffectEnabled = rainbowEffectEnabled === "true" ? "false" : "true";
 }
 
+create (); //to give the user an initial representation of the grid as soon as the visit the page. 
