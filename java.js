@@ -1,7 +1,7 @@
 const container = document.getElementById("div-container");
 const boxSizeRange = document.getElementById("boxSizeRange");
 const boxSizeLabel = document.getElementById("boxSizeLabel"); 
-const rainbowButton = document.getElementById("changeToRainbow")
+const rainbowButton = document.getElementById("changeToRainbow");
 
 let rainbowEffectEnabled = "false"; //declaring it at the beginning of the function allows it be accessible to all the functions in the same scope
 
@@ -32,8 +32,6 @@ function create () {
 
     //calculate the size of boxes 
     const gridSize = parseFloat((480/selectedSize).toFixed(2));
-    console.log(gridSize);
-    console.log(selectedSize*selectedSize);
 
     //clear the existing boxes within the container
     container.innerHTML = "";
