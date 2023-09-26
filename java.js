@@ -3,6 +3,8 @@ const boxSizeRange = document.getElementById("boxSizeRange");
 const boxSizeLabel = document.getElementById("boxSizeLabel"); 
 const rainbowButton = document.getElementById("changeToRainbow")
 
+let rainbowEffectEnabled = "false"; //declaring it at the beginning of the function allows it be accessible to all the functions in the same scope
+
 function generateRandomColor () {
     return "#" + Math.floor(Math.random() * 16777215).toString(16)
 }
